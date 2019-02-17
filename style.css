@@ -1,0 +1,35 @@
+* {
+    color:red;
+}
+
+/*selektor łąсyzony*/
+div.connected {
+    color: aqua;
+}
+
+
+/*before*/
+
+div.connected p::before{
+    content:'123456';
+    color: yellow;
+}
+div.connected p::after{
+    content:'7890';
+    color: yellow;
+}
+
+/*pseudoklasy*/
+.hover a{
+    color: green;
+    text-decoration: none;/*Убирает нижнее подчеркование в ссылках*/
+}
+
+.hover a:hover{
+    color: red;
+}
+
+form input:focus{
+    border: 2px solid brown;
+    outline: 0;
+}
