@@ -33,3 +33,73 @@ form input:focus{
     border: 2px solid brown;
     outline: 0;
 }
+
+
+ul li:first-child{
+    color: violet;
+}
+
+ul li:last-child{
+    color: aqua;
+}
+
+
+
+/*ul li:nth-of-type(3){            вписуем в скоюки цыфру что бы выбрать эллемент
+    color: orange;
+}*/
+
+
+
+/*ul li:nth-of-type(3n+2){            
+    color: orange;
+}*/
+
+
+ul li:nth-of-type(even){            /*все парные*/
+    color: orange;
+}
+
+/*selektory atrybotow*/
+
+input[title]{
+    border: 2px solid violet;
+}
+
+/* z konkretna wartoscia */
+input[title="piaty"]{
+    border: 2px solid aqua;
+}
+
+
+/* sprawdza czy wystepuje string */
+input[title~="input"]{
+    border: 2px solid orange;
+}
+
+/* czy zawiera ciag znakow */
+input[title*="pi"]{
+    border: 2px solid black;
+}
+
+/* rozpoczyna sie na ciag znakow */
+input[title^="pierw"]{
+    border: 2px solid grey;
+}
+
+/* konczy sie na cia znakow */
+input[title$="ni"]{
+    border: 2px solid violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
